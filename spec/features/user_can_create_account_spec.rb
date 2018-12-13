@@ -11,14 +11,13 @@ describe 'a visitor to our web app' do
 
     name = "AskYoGirlAboutMe"
     email = "chrishansen@gmail.com"
-    password = "password"
+    password = "password1"
 
     fill_in :user_name, with: name
     fill_in :user_email, with: email
     fill_in :user_password, with: password
 
     click_on "Create User"
-
-    expect(current_path).to eq(user_path("#{Book.last.id}"))
+    expect(current_path).to eq(user_path("#{User.last.id}"))
   end
 end
