@@ -18,10 +18,10 @@ Note: When users later return to our site and attempt to login, they will submit
 When users register for our site, we’ll want them to be able to later return to our site and login using the details that they provided when registering—specifically, the e-mail address and password. How will our application determine whether or not the user supplied a correct e-mail and password combination?
 
 class User < ApplicationRecord
-  # e.g., User.authenticate('penelope@turing.com', 'boom')
+  e.g., User.authenticate('penelope@turing.com', 'boom')
   def self.authenticate(email, password)
-    # if email and password correspond to a valid user, return that user
-    # otherwise, return nil
+     if email and password correspond to a valid user, return that user
+     otherwise, return nil
   end
 end
 Figure 1. Shell code for an authenticate method.
